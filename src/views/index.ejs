@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>nikhila</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm  navbar-dark">
+
+    <ul class="navbar-nav">
+
+      <%for(var i=0;i<nav.length;i++){%>
+        <li class="nav-item active">
+          <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
+
+          <%}%>
+    </ul>
+  </nav>
+  <div class="jumbotron jumbotron-fluid " id="div1">
+    <div class="container row" id="div2">
+      <h1 class=" col-lg-9 col-sm-6" id="h1"> <b><%=title%></b></h1></div>
+      <div class="col-lg-3 col-sm-4 " id="div3">
+
+      
+    </div>
+  </div>
+  <div class="container" id="div4">
+    <div class="  col-lg-2 col-sm-2 col-md-2 col-xl-2 float-left">
+      <img src="/image/prof.jpg" class="rounded-circle" alt="loading" width="130" height="130">
+    </div>
+    <div class="row col-lg-8 col-sm-8 col-md-8 col-xl-8 float-left ">
+      <h5 id="h5">Repurpose Content to Reach a Wider Audience</h5><br> <br>
+      <h6 id="h6">97thfloor.com</h6>
+
+      <label id="label">2 hours ago. <a href="#">Read more</a></label><br>
+
+      <div class="col-lg-8 float-left">
+        <img src="/image/men.jpg" class="rounded-circle" alt="loading" width="130" height="130"></div>
+
+      <h5 id="use">14 Useful Site for Designers</h5>
+      <h6 id="apple">apple.com</h6>
+      <label id="label2">2 hours ago. <a href="#">Read more</a></label>
+
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>

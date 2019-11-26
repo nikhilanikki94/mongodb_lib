@@ -1,0 +1,178 @@
+#body{
+    background-color: rgb(226, 221, 221);
+}
+nav{
+    background-color: rgb(5, 5, 92);
+}
+#div1{
+    background-color: rgb(3, 3, 58);
+}
+#div2{
+    padding-left: 12%;
+
+}
+#div3{
+    background-color: rgb(15, 8, 110);
+    border-radius: 5px;
+    height:70px;
+    margin-left: 67%; 
+    margin-top: -6%;
+}
+#div4{
+    display:flex;
+    flex-direction:column ;
+    background-color: rgb(255, 253, 253);
+    border-radius:5px;
+    padding:40px; 
+    margin-top:-5%
+}
+#div5{
+    display:flex;
+    flex-direction:row;  
+    background-color: rgb(243, 237, 237);
+    border-radius:5px;
+     padding:30px; 
+    margin-top:-5%;
+}
+#div6{
+    background-color: rgb(226, 226, 228);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#h1{
+    color: white;
+    font-size: 400%;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-left: -6%;
+}
+#h5{
+    margin-top: -16%;
+    margin-left: 29%;
+}
+#h6{
+    color: rgb(65, 64, 64);
+     margin-top: -19%; 
+     margin-left: 29%;
+}
+#h3{
+    margin-top: -25%;
+    margin-left: 40%;
+}
+#hh4{
+    margin-top: -25%;
+    margin-left: 40%;
+}
+#label{
+    margin-top: -15%;
+     margin-left: -15%
+}
+#label3{
+    margin-top: -20%; 
+    margin-left: 40%
+}
+#label2{
+    margin-top: -5%; 
+    margin-left: -11%
+}
+#use{
+    margin-top:-13%; 
+    margin-left:30%;
+}
+#apple{
+    color: rgb(65, 64, 64); 
+    margin-top: -9%; 
+    margin-left: 30%
+}
+#container{
+    background-color: rgb(226, 226, 228);
+    margin-top: 3%;
+     margin-left: 30%;
+}
+#form
+{
+    padding-left: 37%;
+}
+#email1{
+    padding-left: 90px;
+     margin-left: 30px;
+     
+     width: 52%;
+}
+#date{
+    margin-left: 35px;
+    width: 52%;
+}
+#comment{
+    margin-inline-start: 90px;
+    width: 39%;
+}
+#phone{
+    margin-left: 100px;
+    width: 39%;
+}
+#submit{
+    margin-left:100px;
+    padding-left: 30px;
+    margin-top: 40px;
+}
+#pswd1{
+    margin-inline-start: 10px; 
+    margin-top: 25px; 
+}
+#cancel{
+    margin-left:10px;
+    margin-top: 40px;
+}
+.form-check-label{
+    margin-left: 20px;
+}
+img:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+#img{
+    padding-left: 11%;
+}
+
+#buks{
+    margin-top: -40%;
+    margin-left: 40%;
+}
+#genre{
+    color: rgb(65, 64, 64);
+    margin-top: -30%; 
+    margin-left: 40%;
+}
+/* slideshow.img{
+    height:170px;
+    width:auto;/*maintain aspect ratio*/
+    /* max-width:500px; */
+/* } */ 
+#image{
+    width: 100px;
+    height: 100px;
+}
+#color{
+    background-color: gray;
+}
+#books{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content{
+    display : flex;
+    flex-direction : column;
+    margin-left : 5%;
+    background : white;
+    margin-top : -8%;
+    padding-top : 5%;
+    padding-right : 10%;
+    padding-left : 8%;
+}
+#delete{
+background-color: rgb(192, 189, 189);
+}
+#butnUpdate{
+    margin-top: 13%;
+    margin-left: 20%;
+}

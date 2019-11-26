@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library App</title>
+    <link rel = "stylesheet " href = "/css/style.css">
+    <link rel = "stylesheet" href = "/css/bootstrap.min.css">    
+</head>
+<body id="body">
+    <nav class="navbar navbar-expand-sm  navbar-dark">
+  
+      <ul class="navbar-nav">
+        <%for(let i=0;i<nav.length;i++){%>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
+          </li>
+          <%}%>
+      </ul>
+    </nav>
+   
+     
+  
+
+    <div class="jumbotron jumbotron-fluid " id="div1">
+        <div class="container row" id="div2">
+          <h1 class=" col-lg-9 col-sm-6" id="h1"> <b><%=title%></b></h1></div>
+          <div class="col-lg-3 col-sm-4 " id="div3">
+    
+          
+        </div>
+      </div>
+       
+      <div class="container" id="div4">
+
+            
+                <div class="card">
+                <%for(var i=0;i<books.length;i++){%>
+                    <div class = "float-left col-sm-2 col-md-2 col-lg-2 col-xl-2" id = "bookleft">
+                        <img src = "/image/<%=books[i].image%>" id = "image2" class = "card-img-top rounded-circle image-fluid" alt = "Loading" >
+                    </div>
+            
+                   
+                    <div class = "float-right col-sm-8 col-md-8 col-lg-8 col-xl-8" id = "books">
+                        <h4 class = "card-img-top text-left text-secondary"><%=books[i].title%></h4>
+                        <p class="text-bold text-secondary"><%=books[i].genre%></p>
+                        <p class="text-bold text-secondary"><%=books[i].author%></p>
+                        <p class="text-bold text-secondary"><%=books[i].bookid%></p>
+
+                      
+                        <ul class = "nav">
+                            <li>
+                                <a href = "/books/<%=i%>" >Read More</a></small>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                <%}%>
+            </div>
+            </div>
+    
+    
+       
+    <script src = "/js/form.js"></script>
+</body>
+</html>

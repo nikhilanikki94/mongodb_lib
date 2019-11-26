@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>nikhila</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body id="div1">
+  <nav class="navbar navbar-expand-sm  navbar-dark">
+
+    <ul class="navbar-nav">
+      <%for(let i=0;i<nav.length;i++){%>
+        <li class="nav-item active">
+          <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
+        </li>
+        <%}%>
+    </ul>
+  </nav>
+
+
+
+
+  <div class="jumbotron jumbotron-fluid " id="div6">
+    <div class="container text-dark " style="padding-left: 25%; ">
+
+      <h1 style="padding-left: 15%;">
+        <%=title%>
+      </h1> <br><br>
+
+
+
+
+
+      <form method="POST" action="/signUp/save" name="signup" onsubmit="return validateform(this)">
+        <div class="form-group form-inline">
+          <div class="col-sm-12 col-lg-12">
+            <input type="text" class="form-control" name="fname" placeholder="First Name" required>
+            <input type="text" class="form-control" name="lname" placeholder="Last Name" style="margin-inline-start: 10px" required><br><br>
+            <div class="form-group">
+              <label>Email:</label>
+              <input type="email" class="form-control" id="email1" name="email" placeholder="Enter email" required>
+            </div><br>
+            <div class="form-group">
+              <label>DOB:</label>
+              <input type="date" name="bday" class="form-control" id="date" required>
+            </div> <br>
+            <div class="form-group">
+              <label>Gender:</label>
+              <input style="margin-left: 50px;" type="radio" name="gender" value="Male" checked>Male
+              <input style="margin-left: 65px;" type="radio" name="gender" value="Female">Female
+            </div> <br>
+            <div class="form-group">
+              <label>Languages Known:</label>
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="eng" checked>English
+              </label>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="check2" name="option1" value="hindi">Hindi
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="check3" name="option1" value="mal">Malayalam
+                </label>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label>Address:</label>
+              <textarea class="form-control" rows="2" id="comment" name="address" style="margin-inline-start: 90px;;"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Country:</label>
+              <select style="margin-left: 100px;" name="country">
+                <option value="india">India</option>
+                <option value="china">china</option>
+                <option value="america">America</option>
+                <option value="UAE">UAE</option>
+              </select><br><br>
+            </div>
+            <div class="form-group">
+              <label>Phone:</label>
+              <input type="text" class="form-control" name="phone" placeholder="Phone Number" id="phone" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="pswd" style=" margin-top: 25px; "
+                required>
+
+              <input type="password" class="form-control" id="pswd1" placeholder="Confirm password" name="pswd1" required>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Sign Up" name="signup" id="submit">
+              <button type="button" id="cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/js/form.js"></script>
+</body>
+
+</html>

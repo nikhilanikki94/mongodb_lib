@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body id="div1">
+    <nav class="navbar navbar-expand-sm  navbar-dark">
+        <ul class="navbar-nav">
+            <%for(var i=0;i<nav.length;i++){%>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
+
+                </li>
+
+                <%}%>
+        </ul>
+
+
+    </nav>
+    <form action="/login/validate" name="myform" method="POST" onsubmit="return validateform()">
+
+        <div class="container jumbotron jumbotron-fluid col-lg-5 " id="container">
+            <div class="container text-dark  " style="padding-left: 32%; ">
+                <h2>LOGIN</h2><br>
+                <label class="form-group form-inline">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" style="width: 250px;" required><br>
+                <label class="form-group">Password :</label>
+                <input type="password" class="form-control" name="pswd" id="passwrd" style="width: 250px;" placeholder="enter password"
+                    required><br>
+                <input type="checkbox" name="remember" value="remeber">Remember me
+                <a href="#forget">Forget password</a><br><br>
+                <button type="submit" class="btn btn-primary">LOGIN</button>
+                <button type="button" style="margin:10px ;">Cancel</button>
+                <p>New user? <a href="signUp.ejs">Sign up</a></p>
+            </div>
+        </div>
+
+    </form>
+    <script src="/js/form.js"></script>
+</body>
+
+</html>

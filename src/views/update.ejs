@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update</title>
+    <link rel = "stylesheet " href = "/css/style.css">
+    <link rel = "stylesheet" href = "/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation Bar-->
+
+    <nav class="navbar navbar-expand   navbar-dark col-lg-12 col-md-12">
+        <div class="container-fluid">
+        <ul class="navbar-nav">
+    
+          <%for(var i=0;i<nav.length;i++){%>
+            <li class="nav-item active">
+              <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
+    
+            </li>
+            <%}%>
+        </ul></div>
+      </nav>
+     
+    <!--Top Part-->
+
+    <div class="jumbotron jumbotron-fluid " id="div1">
+            <div class="container row" id="div2">
+              <h1 class=" col-lg-9 col-sm-6" id="h1"> <b><%=title%></b></h1></div>
+              <div class="col-lg-3 col-sm-4 " id="div3">
+             
+            </div>
+          </div>
+
+          <div class=" container " id="div5">
+
+           
+            <div class="col-lg-2"></div>
+
+            <!--Update Book-->
+
+            <div class="jumbotron col-md-6 col-lg-5 " id="delete">
+                <h5 style="font-size:x-large"><b>Update The Books</b></h5>
+            
+            <div id="logindiv">
+            <form action = "/books/modify" class = "form-group " name="login" method = "POST">
+                
+                <div class="form-group">
+                    <label>Title*</label>
+                    <input type="text" class="form-control" name="booktitle" value="<%=data.title" placeholder="Enter Book Title" >
+                </div>
+                <div class="form-group">
+                    <label>Author*</label>
+                    <input type="text" class="form-control" name="author" value="<%=data.author%>" placeholder="Enter Author Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Genre*</label>
+                    <input type="text" class="form-control" name="genre" value="<%=data.genre%>" placeholder="Enter Genre" required>
+                </div>
+                <div class="form-group">
+                    <label>Image Name*</label>
+                    <input type="text" class="form-control" value="<%=data.image%>" name="image" required>
+                </div>
+                <div class = "form-group" id = "butnUpdate">
+                    <input type = "submit" class = "btn btn-success" value = "Update" name="update">
+                    <button type = "cancel" class = "btn btn-danger " value = "cancel" >Cancel</button>
+                </div>
+                    <div>
+            </form>
+            </div>
+        </div>
+    </div></div>
+
+       
+    <script src = "/js/form.js"></script>
+</body>
+</html>
